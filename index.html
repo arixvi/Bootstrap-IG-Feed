@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c756782eb6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="fa-brands fa-instagram mr-1"></i>
+        <span>Instagram</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+
+
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+            Create a New Post
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label for="msgbox">Caption:</label>
+                  <textarea class="form-control" placeholder="Add the caption of your post here" id="floatingTextarea"
+                    style="height: 100px"></textarea>
+
+                  <i class="fa-solid fa-camera"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Accessibility</a>
+              <a class="dropdown-item" href="#">Privacy & Data</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"> Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--nav pills-->
+  
+
+    <div class="d-flex w-100 justify-content-center">
+      <ul class="nav nav-pills" id="myTab" role="tablist">
+        <li class="nav-item"><!--home tab-->
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-selected="true">
+            <i class="fas fa-square"></i></a>
+        </li>
+        <li class="nav-item"><!--profile tab-->
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+            aria-selected="false">
+            <i class="fas fa-th"></i></a>
+        </li>
+      </ul>
+    </div>
+
+  <!--nav pills end-->
+
+  <!--card body-->
+
+  <div class="container">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" href="#home"></div>
+      <div class="row justify-content-center p-3">
+        <div class="col-sm-12 col-md-8 col-lg-6">
+          <div class="card" style"">
+
+
+
+            <div>
+              <div class="d-flex p-2 justify-content-between">
+                <div><b>arantzavillarreal</b><br> Brooklyn Bridge, New York</div>
+                <div>05/19</div>
+              </div>
+            </div>
+            <img
+              src="https://www.asce.org/-/media/asce-images-and-files/publications-and-news/civil-engineering-magazine/images/2022/07-july/cep-history-lesson-new-yorks-brooklyn-bridge-is-an-engineering-marvel/26-top-history-lesson.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">
+                <bold>47 likes</bold>
+              </h6>
+              <p class="card-text"> I love NY!</p>
+              <div class="d-flex justify-content-between">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--2nd post-->
+    <div class="tab-content" id="myTabContent ">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" href="#home">
+        <div class="row justify-content-center p-3">
+          <div class="col-sm-12 col-md-8 col-lg-6">
+            <div class="card" style="">
+              <div>
+                <div class="d-flex p-2 justify-content-between">
+                  <div><b> arantzavillarreal</b><br> Orlando, Florida</div>
+                  <div> 05/22</div>
+                </div>
+              </div>
+              <img
+                src="https://wallpapers.com/images/hd/blooming-flowers-at-walt-disney-world-desktop-qygwppwmbhcl0qn8.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">
+                  <bold>77 likes</bold>
+                </h6>
+                <p class="card-text"> #DisneyAdult and proud :) </p>
+                <div class="d-flex justify-content-between"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--3rd post-->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" href="#home">
+        <div class="row justify-content-center p-3">
+          <div class="col-sm-12 col-md-8 col-lg-6">
+            <div class="card" style="">
+              <div>
+                <div class="d-flex p-2 justify-content-between">
+                  <div><b>arantzavillarreal</b><br> Key Largo, Florida</div>
+                  <div>07/22</div>
+                </div>
+              </div>
+              <img src="https://www.evergladeskayaking.com/mt59.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">
+                  <bold>94 likes</bold>
+                </h6>
+                <p class="card-text"> kayaking the Florida mangroves! </p>
+                <div class="d-flex justify-content-between"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <!--grid view-->
+    <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade"  id="profile" role="tabpanel" aria-labelledby="profile-tab" href="#profile">
+      <div class="container-fluid p-2 mb-2 text-dark">
+
+
+        <div class="row no-gutters  mb-2">
+          <div class="col-sm p-2">
+            <img
+              src="https://www.asce.org/-/media/asce-images-and-files/publications-and-news/civil-engineering-magazine/images/2022/07-july/cep-history-lesson-new-yorks-brooklyn-bridge-is-an-engineering-marvel/26-top-history-lesson.jpg"
+              class="card-img-top img-fluid" alt="...">
+          </div>
+          <div class="col-sm p-2">
+            <img
+              src="https://wallpapers.com/images/hd/blooming-flowers-at-walt-disney-world-desktop-qygwppwmbhcl0qn8.jpg"
+              class="card-img-top img-fuild" alt="...">
+          </div>
+          <div class="col-sm p-2">
+            <img src="https://www.evergladeskayaking.com/mt59.jpg" class="card-img-top img-fluid" alt="...">
+          </div>
+        </div>
+
+        <div class="row no-gutters p2 mb-2">
+          <div class="col-sm p-2">
+            <img src="https://www.coconutcay.com/wp-content/uploads/2022/12/Sombrero-Beach-Shutterstovk.jpg"
+              class="card-img-top img-fluid" alt="...">
+          </div>
+          <div class="col-sm p-2">
+            <img
+              src="https://media.istockphoto.com/id/157618477/photo/rollerskates-in-the-roller-disco.jpg?s=612x612&w=0&k=20&c=BrH5LAszXZRdaC9XZukbqjvzldlksjj_cpo3ewVPUmQ="
+              class="card-img-top img-fluid" alt="...">
+          </div>
+          <div class="col-sm p-2">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/9ecde472404339.5be5e7607a768.jpg"
+              class="card-img-top img-fluid" alt="...">
+          </div>
+        </div>
+
+        <div class="row no-gutters p2 mb-2">
+          <div class="col-sm p-2">
+            <img src="https://smalltownwashington.com/wp-content/uploads/2020/11/shutterstock_625837052-1024x684.jpg"
+              class="card-img-top img-fluid" alt="...">
+          </div>
+          <div class="col-sm p-2">
+            <img
+              src="https://assets.entrepreneur.com/content/3x2/2000/20150708172005-coding-working-workspace-apple-macintosh.jpeg"
+              class="card-img-top img-fluid" alt="...">
+          </div>
+          <div class="col-sm p-2">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWjNFWHw34drkJJKyW9ovBD8lKRjQTNonka-fThjdTSw1FGvxrocC3fkepQeCT1T3HhnU&usqp=CAU"
+              class="card-img-top img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--grid end-->
+
+
+
+
+
+
+
+
+    <!--card body end-->
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
